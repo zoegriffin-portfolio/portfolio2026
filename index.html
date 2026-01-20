@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoe Griffin | Copywriter & Commercial Journalist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f9f8f5; 
+            --text: #1a1a1a; 
+            --accent: #555555;
+            --border: #e0ddd7;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            padding: 100px 10% 80px;
+            max-width: 1200px;
+        }
+
+        .profile-image {
+            width: 280px;
+            height: auto;
+            border-radius: 4px;
+            object-fit: cover;
+            border: 1px solid var(--border);
+            flex-shrink: 0;
+        }
+
+        .header-text {
+            max-width: 700px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin: 0 0 20px 0;
+            font-weight: 600;
+        }
+
+        .bio {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: var(--accent);
+            margin: 0;
+            border-left: 1px solid var(--border);
+            padding-left: 30px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 60px;
+            padding: 0 10% 100px;
+        }
+
+        .card {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .image-box {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background-color: #e2e2e2;
+            margin-bottom: 25px;
+            overflow: hidden;
+            transition: opacity 0.3s ease;
+        }
+
+        .card:hover .image-box { opacity: 0.8; }
+
+        .image-box img { width: 100%; height: 100%; object-fit: cover; }
+
+        .card-category {
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            color: #999;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .card-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .card-summary {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+
+        .cta-link {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border-bottom: 1px solid var(--text);
+            padding-bottom: 2px;
+            font-weight: 600;
+            text-decoration: none;
+            color: var(--text);
+        }
+
+        footer {
+            padding: 100px 10%;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .contact-heading { font-family: 'Playfair Display', serif; font-size: 2.2rem; margin-bottom: 20px; }
+        .email-link { font-size: 1.3rem; color: var(--text); text-decoration: none; border-bottom: 1px solid var(--border); }
+        .author-link { display: block; margin-top: 15px; font-size: 0.9rem; color: var(--accent); text-decoration: none; font-style: italic; }
+
+        @media (max-width: 850px) {
+            .profile-header { flex-direction: column; align-items: flex-start; }
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="profile-header">
+        <img src="zoeTV.jpg" alt="Zoe Griffin" class="profile-image">
+        <div class="header-text">
+            <h1>Zoe Griffin</h1>
+            <p class="bio">
+                Experienced copywriter, journalist and HubSpot expert, with proven succes in tech, fintech, and lifestyle growth. A self-confessed word geek, I've appeared on ITV to discuss the evolution of the English language. I bridge the gap between complex engineering and consumer narratives to scale brand awareness, acquisition, and affiliate revenue.
+            </p>
+        </div>
+    </section>
+
+    <main class="grid">
+        
+        <div class="card">
+            <div class="image-box"><img src="hyperjar-web.jpg" alt="HyperJar Website Build"></div>
+            <span class="card-category">Acquisition · Ecosystems</span>
+            <span class="card-title">HyperJar: The Digital Front Door</span>
+            <p class="card-summary">Full brand-voice and website build. I humanized financial tools and developed the idea of HyperJar being a 'spending' app, not a budgeting app. This drove mass-market growth through clarity and emotional resonance.</p>
+            <a href="https://hyperjar.com/" target="_blank" class="cta-link">Visit Website</a>
+        </div>
+
+        <div class="card">
+            <div class="image-box"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80"></div>
+            <span class="card-category">B2B Strategy · Infrastructure</span>
+            <span class="card-title">Hyperlayer: Selling financial software through content</span>
+            <p class="card-summary">Technical B2B messaging delivering a strategic narrative for banking stakeholders. Copy is clear and benefit-led, translating complex subjects into commercial offerings, approved by compliance.</p>
+            <a href="https://www.hyperlayer.com/solutions/family-banking" target="_blank" class="cta-link">View B2B Strategy</a>
+        </div>
+
+        <div class="card">
+            <div class="image-box"><img src="email-cover.jpg" alt="Fintech CRM"></div>
+            <span class="card-category">Retention · Behavioral CRM</span>
+            <span class="card-title">HyperJar: Personalised emails based on behaviour</span>
+            <p class="card-summary">Strategic retention using first-party data from users cashback spend. By identifying £2.98 in missed rewards, I utilised loss aversion to successfully re-engage warm leads (who were often missing out on more than £2.98).</p>
+            <a href="Gmail - You missed 3 chances to save last month.pdf" target="_blank" class="cta-link">View CRM Case Study</a>
+        </div>
+
+        <div class="card">
+            <div class="image-box"><img src="groceries.jpg" alt="Hubspot Onboarding"></div>
+            <span class="card-category">Lifecycle · CRM Automation</span>
+            <span class="card-title">HyperJar: Automated Onboarding Flow</span>
+            <p class="card-summary">Designed an automated onboarding sequence in HubSpot triggered every 4 weeks to drive account activation. The messaging simplifies complex banking steps into three clear actions to reduce early-stage churn.</p>
+            <a href="Gmail - Welcome to HyperJar!.pdf" target="_blank" class="cta-link">View Onboarding Flow</a>
+        </div>
+
+        <div class="card">
+            <div class="image-box"><img src="become-email.jpg" alt="FemTech Education"></div>
+            <span class="card-category">Trust · Educational CRM</span>
+            <span class="card-title">Become: FemTech Product Education</span>
+            <p class="card-summary">Building authority for Menopause apparel tech by explaining physiological triggers like the hypothalamus' role in temperature regulation. This approach converts skeptical leads through high-trust technical storytelling.</p>
+            <a href="Gmail - Ever wondered why you get hot flushes_.pdf" target="_blank" class="cta-link">View Educational Sample</a>
+        </div>
+
+        <div class="card">
+            <div class="image-box"><img src="secretmillionaires.jpg" alt="HyperJar PR Report"></div>
+            <span class="card-category">PR Strategy · White Paper</span>
+            <span class="card-title">HyperJar: The 'Secret Millionaires' Report</span>
+            <p class="card-summary">Authored a data-led report for a national PR campaign. Translated internal user insights into a compelling narrative, positioning the brand as a leader in financial behavior.</p>
+            <a href="https://www.canva.com/design/DAGIwdEi-C0/K1QeYvy3sKp0c5ULAATEFA/view?utm_content=DAGIwdEi-C0&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" class="cta-link">View Full Report</a>
+        </div>
+
+        <div class="card">
+            <div class="image-box"><img src="insta.jpg" alt="HyperJar Social Strategy"></div>
+            <span class="card-category">Community · Awareness</span>
+            <span class="card-title">HyperJar: Instagram Growth</span>
+            <p class="card-summary">Crafting the lifestyle-led voice of HyperJar on social platforms. I developed educational, punchy content to build a community centered on the art of spending well.</p>
+            <a href="https://www.instagram.com/hyperjar/" target="_blank" class="cta-link">View Instagram</a>
+        </div>
+
+        <div class="card">
+            <div class="image-box"><img src="incustech.jpg" alt="INCUS Sports Tech"></div>
+            <span class="card-category">SEO · Sports Tech</span>
+            <span class="card-title">INCUS: Bridging Tech & Athletic Performance</span>
+            <p class="card-summary">Engineered SEO-rich blog and social copy to dominate Google search visibility for high-performance wearable tech, translating complex data into athlete benefits.</p>
+            <a href="https://www.instagram.com/p/Cmw2CX8rDX7/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="cta-link">View Social Strategy</a>
+        </div>
+
+        <div class="card">
+            <div class="image-box"><img src="indybest-watch.jpg" alt="IndyBest Sports Tech"></div>
+            <span class="card-category">Journalism · Affiliate Revenue</span>
+            <span class="card-title">The Independent: IndyBest Sports Tech</span>
+            <p class="card-summary">Translating sports technology into consumer-friendly language. This service-led journalism drives high-intent traffic and generates significant affiliate commission.</p>
+            <a href="https://www.independent.co.uk/extras/indybest/outdoor-activity/best-fitness-tracker-watch-b2482791.html" target="_blank" class="cta-link">Read at The Independent</a>
+        </div>
+
+        <div class="card">
+            <div class="image-box"><img src="mailonline.jpg" alt="MailOnline Sponsored Content"></div>
+            <span class="card-category">Sponsored Content · Amazon Sales</span>
+            <span class="card-title">MailOnline: High-Volume Commerce Copy</span>
+            <p class="card-summary">Strategic sponsored content written in the Daily Mail vernacular. Designed to drive immediate Amazon conversions by blending tabloid urgency with commercial utility.</p>
+            <a href="https://www.dailymail.co.uk/lifestyle/article-9075729/Amazon-shoppers-say-wearable-blanket-cosy-save-heating.html" target="_blank" class="cta-link">Read at Daily Mail</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="contact-heading">Strategic Inquiries</div>
+        <a href="mailto:zoe@zoegriffinmedia.com" class="email-link">zoe@zoegriffinmedia.com</a>
+        <a href="https://www.independent.co.uk/author/zoe-griffin" target="_blank" class="author-link">Read more Independent articles by Zoe Griffin</a>
+        <div class="copyright">&copy; 2026 Zoe Griffin. All rights reserved.</div>
+    </footer>
+
+</body>
+</html>
